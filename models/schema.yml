@@ -33,6 +33,21 @@ models:
         tests:
             - positive_value
 
+  - name: dim_hosts_cleansed
+    description: Cleansed table which contains Airbnb Hosts Details.
+    columns:
+
+      - name: host_id
+        description: Primary key for the host
+        tests:
+          - unique
+          - not_null
+
+      - name: host_name
+        description: Name of the host and can't be null.
+        tests:
+          - not_null
+  
   - name: fct_reviews
     columns:
 
