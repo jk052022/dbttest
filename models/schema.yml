@@ -47,7 +47,7 @@ models:
         description: Name of the host and can't be null.
         tests:
           - not_null
-  
+
   - name: fct_reviews
     columns:
 
@@ -65,4 +65,3 @@ models:
         tests:
           - accepted_values:
               values: ['positive', 'neutral', 'negative']
-
