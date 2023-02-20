@@ -16,7 +16,7 @@ SELECT
  ELSE 'full moon'
  END AS is_full_moon
 FROM
- fct_reviews
+ fct_reviews 
  r
  LEFT JOIN full_moon_dates
  fm
